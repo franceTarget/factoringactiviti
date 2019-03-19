@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="activiti-demo" />
+        <module name="factoring-activiti" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="activiti-demo" target="1.8" />
+      <module name="factoring-activiti" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
