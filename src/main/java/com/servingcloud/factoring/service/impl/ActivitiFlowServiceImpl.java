@@ -4,6 +4,7 @@ package com.servingcloud.factoring.service.impl;
 import com.alibaba.fastjson.JSON;
 import com.servingcloud.factoring.dto.*;
 import com.servingcloud.factoring.service.IActivitiFlowService;
+import com.servingcloud.factoring.utils.IdUtil;
 import com.servingcloud.factoring.utils.SnowflakeIdWorker;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
@@ -61,9 +62,6 @@ public class ActivitiFlowServiceImpl implements IActivitiFlowService {
      * 角色
      */
     private static final String NODE_ACTIVITI_TYPE_ROLE = "2";
-
-    private static final SnowflakeIdWorker snowflakeIdWorker = new SnowflakeIdWorker(0, 0);
-
 
     /**
      * 创建流程.
@@ -213,7 +211,7 @@ public class ActivitiFlowServiceImpl implements IActivitiFlowService {
         BpmnModel model = new BpmnModel();
         Process process = new Process();
         model.addProcess(process);
-        process.setId("P" + String.valueOf(snowflakeIdWorker.nextId()));
+        process.setId("P" + IdUtil.newId());
         process.setName(activitiFlowRequestDto.getActivitiName());
         process.setDocumentation(activitiFlowRequestDto.getActivitiDesc());
 
@@ -343,7 +341,7 @@ public class ActivitiFlowServiceImpl implements IActivitiFlowService {
         SequenceFlow flow = new SequenceFlow();
         long generate = 0L;
         try {
-            generate = snowflakeIdWorker.nextId();
+            generate = IdUtil.newId();
         } catch (Exception e) {
             e.printStackTrace();
         }

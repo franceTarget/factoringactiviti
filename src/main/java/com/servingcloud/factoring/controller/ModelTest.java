@@ -9,6 +9,7 @@ import org.activiti.engine.RepositoryService;
 import org.activiti.engine.repository.Model;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -25,10 +26,11 @@ import javax.servlet.http.HttpServletResponse;
 public class ModelTest {
 
     @RequestMapping("create")
-    public void createModel(HttpServletRequest request, HttpServletResponse response){
+    public void createModel(HttpServletRequest request,
+                            HttpServletResponse response,
+                            @RequestParam("modelKey") String modelKey){
         try{
             String modelName = "modelName";
-            String modelKey = "modelKey";
             String description = "description";
 
             ProcessEngine processEngine = ProcessEngines.getDefaultProcessEngine();
