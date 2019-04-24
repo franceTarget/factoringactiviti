@@ -15,9 +15,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @Controller
-@RequestMapping("model")
+@RequestMapping("/model")
 public class ModelTest {
-    @RequestMapping("create")
+    @RequestMapping("/create")
     public void createModel(HttpServletRequest request,
                             HttpServletResponse response,
                             @RequestParam("modelKey") String modelKey) {

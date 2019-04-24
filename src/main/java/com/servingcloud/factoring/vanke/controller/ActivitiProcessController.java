@@ -2,6 +2,8 @@ package com.servingcloud.factoring.vanke.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import com.google.common.collect.Maps;
+import com.servingcloud.factoring.vanke.models.request.CompleteReq;
 import com.servingcloud.factoring.vanke.models.request.DeployReq;
 import com.servingcloud.factoring.vanke.models.request.StartReq;
 import com.servingcloud.factoring.vanke.models.response.Response;
@@ -22,6 +24,7 @@ import org.activiti.engine.repository.Deployment;
 import org.activiti.engine.repository.Model;
 import org.activiti.engine.runtime.ProcessInstance;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -32,6 +35,7 @@ import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
@@ -47,6 +51,9 @@ public class ActivitiProcessController {
 
     @Autowired
     private HistoryService historyService;
+
+    @Autowired
+    private TaskService taskService;
 
     @ApiOperation(value = "流程发布", notes = "")
     @RequestMapping(value = "/self-process/deploy", method = POST)
@@ -71,7 +78,7 @@ public class ActivitiProcessController {
         //部署流程
         Deployment deployment = null;
         try {
-            deployment = repositoryService.createDeployment().name(model.getName()).addString(
+            deployment = repositoryService.createDeployment().name(req.getName()).tenantId(req.getTenantId()).addString(
                     processName, new String(bpmnBytes, "UTF-8")).deploy();
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
@@ -86,8 +93,21 @@ public class ActivitiProcessController {
         return Response.ok("启动成功", processInstance.getProcessInstanceId());
     }
 
+    @ApiOperation(value = "任务提交", notes = "")
+    @RequestMapping(value = "/self-process/complete", method = POST)
+    public Response<Boolean> complete(@RequestBody CompleteReq req) {
 
-    @RequestMapping("graphHistoryProcessInstance")
+        Map<String, Object> resultMap = Maps.newHashMap();
+        resultMap.put("agree", req.getAgree());
+        resultMap.put("context", req.getContext());
+        taskService.setVariablesLocal(req.getTaskId(), resultMap);
+        taskService.setAssignee(req.getTaskId(), req.getUserId());
+        taskService.complete(req.getTaskId(), resultMap);
+
+        return Response.ok("提交成功", true);
+    }
+
+    @GetMapping("graphHistoryProcessInstance")
     public void processTracking(String processInstanceId, HttpServletResponse response) throws Exception {
         HistoricProcessInstance processInstance = historyService.createHistoricProcessInstanceQuery().processInstanceId(processInstanceId).singleResult();
         String procDefId = processInstance.getProcessDefinitionId();
