@@ -17,6 +17,8 @@ public class CompleteReq {
     @ApiModelProperty("流程实例ID")
     private String processId;
 
+    private String task;
+
     @ApiModelProperty("结果CODE 1.同意，0.否决")
     private String agree;
 

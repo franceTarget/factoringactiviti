@@ -1,11 +1,13 @@
 package com.servingcloud.factoring.vanke.controller;
 
+import com.alibaba.fastjson.JSONObject;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import com.google.common.collect.Maps;
 import com.servingcloud.factoring.vanke.models.request.CompleteReq;
 import com.servingcloud.factoring.vanke.models.request.DeployReq;
 import com.servingcloud.factoring.vanke.models.request.StartReq;
+import com.servingcloud.factoring.vanke.models.response.JsonResponse;
 import com.servingcloud.factoring.vanke.models.response.Response;
 import com.servingcloud.factoring.vanke.utils.DefaultProcessDiagramGeneratorExt;
 import io.swagger.annotations.Api;
@@ -28,6 +30,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
@@ -96,9 +99,16 @@ public class ActivitiProcessController {
     @ApiOperation(value = "任务提交", notes = "")
     @RequestMapping(value = "/self-process/complete", method = POST)
     public Response<Boolean> complete(@RequestBody CompleteReq req) {
-
+        String task = req.getTask();
+        String s = new RestTemplate().getForObject("http://192.168.11.43:8081/rules/taskTest?task=" + task, String.class);
+        JsonResponse jsonResponse = JSONObject.parseObject(s, JsonResponse.class);
+        Boolean data = (Boolean) jsonResponse.getData();
+        String agree = "0";
+        if (data) {
+            agree = "1";
+        }
         Map<String, Object> resultMap = Maps.newHashMap();
-        resultMap.put("agree", req.getAgree());
+        resultMap.put("agree", agree);
         resultMap.put("context", req.getContext());
         taskService.setVariablesLocal(req.getTaskId(), resultMap);
         taskService.setAssignee(req.getTaskId(), req.getUserId());
@@ -107,7 +117,7 @@ public class ActivitiProcessController {
         return Response.ok("提交成功", true);
     }
 
-    @GetMapping("graphHistoryProcessInstance")
+    @GetMapping("/graphHistory/processInstance")
     public void processTracking(String processInstanceId, HttpServletResponse response) throws Exception {
         HistoricProcessInstance processInstance = historyService.createHistoricProcessInstanceQuery().processInstanceId(processInstanceId).singleResult();
         String procDefId = processInstance.getProcessDefinitionId();
