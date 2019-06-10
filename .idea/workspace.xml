@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2874d7b1-1d94-4ec0-80dd-6b3656c05dc8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/controller/ActivitiProcessController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/controller/ActivitiProcessController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/models/request/CompleteReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/models/request/CompleteReq.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/controller/ActivitiProcessController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/controller/ActivitiProcessController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/models/request/CompleteReq.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/models/request/CompleteReq.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/factoring-activiti.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/activiti-boot.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/activiti-boot.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -24,17 +20,26 @@
       <file leaf-file-name="ActivitiProcessController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/controller/ActivitiProcessController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="89" column="5" lean-forward="true" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
+            <state relative-caret-position="1225">
+              <caret line="89" column="5" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AutoCompleteFirstTaskEventListener.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AutoCompleteFirstTaskEventListener.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/listener/AutoCompleteFirstTaskEventListener.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="123">
-              <caret line="51" column="29" lean-forward="true" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+              <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activiti-boot.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/activiti-boot.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="31" column="11" lean-forward="true" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -80,7 +85,6 @@
         <option value="$PROJECT_DIR$/src/test/java/activiti/DeployedServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/config/SpringContextHolder.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/listener/AutoCompleteFirstTaskEventListener.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/activiti-boot.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/config/ActivitiConfig.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/process.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/utils/DefaultProcessDiagramGenerator.java" />
@@ -92,6 +96,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/models/response/JsonResponse.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/models/request/CompleteReq.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/controller/ActivitiProcessController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/config/SnowflakeIdGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/activiti-boot.xml" />
       </list>
     </option>
   </component>
@@ -119,11 +125,9 @@
     <option name="jreName" value="1.8" />
   </component>
   <component name="NodePackageJsonFileManager">
-    <packageJsonPaths>
-      <path value="$PROJECT_DIR$/src/main/resources/public/editor-app/libs/es5-shim-15.3.4.5/package.json" />
-    </packageJsonPaths>
+    <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-12" />
     <option name="y" value="-12" />
     <option name="width" value="1944" />
@@ -210,44 +214,7 @@
               <item name="servingcloud" type="462c0819:PsiDirectoryNode" />
               <item name="factoring" type="462c0819:PsiDirectoryNode" />
               <item name="vanke" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="factoringactiviti" type="b2602c69:ProjectViewProjectNode" />
-              <item name="factoringactiviti" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="servingcloud" type="462c0819:PsiDirectoryNode" />
-              <item name="factoring" type="462c0819:PsiDirectoryNode" />
-              <item name="vanke" type="462c0819:PsiDirectoryNode" />
-              <item name="listener" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="factoringactiviti" type="b2602c69:ProjectViewProjectNode" />
-              <item name="factoringactiviti" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="servingcloud" type="462c0819:PsiDirectoryNode" />
-              <item name="factoring" type="462c0819:PsiDirectoryNode" />
-              <item name="vanke" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="factoringactiviti" type="b2602c69:ProjectViewProjectNode" />
-              <item name="factoringactiviti" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="servingcloud" type="462c0819:PsiDirectoryNode" />
-              <item name="factoring" type="462c0819:PsiDirectoryNode" />
-              <item name="vanke" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="response" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="factoringactiviti" type="b2602c69:ProjectViewProjectNode" />
@@ -268,29 +235,13 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="factoringactiviti" type="b2602c69:ProjectViewProjectNode" />
-              <item name="factoringactiviti" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="factoringactiviti" type="b2602c69:ProjectViewProjectNode" />
-              <item name="factoringactiviti" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -302,7 +253,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="E:/workspace/factoring-portal-be" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="SDKs" />
@@ -311,19 +262,20 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\webstore\factoringactiviti\src\main\resources" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.servingcloud.factoring.vanke.controller" />
-      <recent name="demo" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\webstore\factoringactiviti\src\main\java\com\servingcloud\factoring\vanke\models\response" />
       <recent name="E:\webstore\factoringactiviti\src\main\resources\static" />
       <recent name="E:\webstore\factoringactiviti\src\main\java\com\servingcloud\factoring\vanke" />
       <recent name="E:\webstore\factoringactiviti\src\main\resources" />
       <recent name="E:\webstore\factoringactiviti\src\main\resources\public\editor-app\i18n" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.servingcloud.factoring.vanke.config" />
+      <recent name="com.servingcloud.factoring.vanke.controller" />
+      <recent name="demo" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\webstore\factoringactiviti\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -387,25 +339,25 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="ActivitiApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="ActivitiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="factoring-activiti" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.servingcloud.factoring.vanke.*" />
+          <option name="PATTERN" value="com.ren.factoring.vanke.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.servingcloud.factoring.vanke.ActivitiApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ren.factoring.vanke.ActivitiApplication" />
     </configuration>
     <configuration name="ActivitiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="factoringactiviti" />
+      <module name="factoring-activiti" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.servingcloud.factoring.vanke.*" />
+          <option name="PATTERN" value="com.ren.factoring.vanke.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.servingcloud.factoring.vanke.ActivitiApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ren.factoring.vanke.ActivitiApplication" />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -459,6 +411,7 @@
       <workItem from="1556070508990" duration="1325000" />
       <workItem from="1556077177462" duration="2378000" />
       <workItem from="1556240544647" duration="2630000" />
+      <workItem from="1560161844292" duration="153000" />
     </task>
     <servers />
   </component>
@@ -480,7 +433,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56542000" />
+    <option name="totallyTimeSpent" value="56695000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -498,17 +451,16 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39259258" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32777777" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Run Dashboard" order="8" weight="0.4611111" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21907842" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22312045" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="BPMNPalette" order="3" />
@@ -517,10 +469,11 @@
       <window_info active="true" id="BPMN Editor" order="0" visible="true" weight="0.329582" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32777777" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
       <window_info id="Designer" order="3" />
@@ -571,13 +524,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/activiti/activiti-engine/6.0.0/activiti-engine-6.0.0.jar!/org/activiti/engine/delegate/event/impl/ActivitiEntityEventImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/activiti/activiti-engine/6.0.0/activiti-engine-6.0.0.jar!/org/activiti/engine/RepositoryService.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -755,13 +701,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/activiti-boot.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/ActivitiApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -871,9 +810,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="362">
           <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -888,9 +824,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -905,23 +838,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
           <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/controller/ActivitiProcessController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="89" column="5" lean-forward="true" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
+        <state relative-caret-position="1225">
+          <caret line="89" column="5" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/listener/AutoCompleteFirstTaskEventListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="123">
-          <caret line="51" column="29" lean-forward="true" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+          <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/config/SnowflakeIdGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="8" selection-start-column="8" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/activiti-boot.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="31" column="11" lean-forward="true" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
         </state>
       </provider>
     </entry>

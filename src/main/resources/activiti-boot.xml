@@ -22,11 +22,16 @@
         <!--全局监听器 -->
         <property name="eventListeners">
             <list>
-                <bean class="com.servingcloud.factoring.vanke.listener.AutoCompleteFirstTaskEventListener" />
+                <bean class="com.ren.factoring.vanke.listener.AutoCompleteFirstTaskEventListener" />
             </list>
         </property>
 
+        <property name="idGenerator" ref="uuidGenerator">
+        </property>
+
     </bean>
+
+    <bean id="uuidGenerator" class="com.ren.factoring.vanke.config.SnowflakeIdGenerator"></bean>
 
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"   destroy-method="close">
         <property name="driverClassName" value="${spring.datasource.driver-class-name}" />
