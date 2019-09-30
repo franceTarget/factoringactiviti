@@ -15,7 +15,7 @@ spring:
 
 #####最新在用应用
 server:
-  port: 80
+  port: 8080
     #自动部署文件路径后缀
 #   process-definition-location-prefix: classpath:/processes/
 #   process-definition-location-suffixes:

@@ -3,8 +3,85 @@
   <component name="ChangeListManager">
     <list default="true" id="2874d7b1-1d94-4ec0-80dd-6b3656c05dc8" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/factoring-activiti.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ren/factoring/vanke/ActivitiApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/ActivitiApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ren/factoring/vanke/config/ActivitiConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/config/ActivitiConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ren/factoring/vanke/config/SnowflakeIdGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/config/SnowflakeIdGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ren/factoring/vanke/config/SpringContextHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/config/SpringContextHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ren/factoring/vanke/config/Swagger2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/config/Swagger2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ren/factoring/vanke/controller/ActivitiProcessController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/controller/ActivitiProcessController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ren/factoring/vanke/controller/ModelEditorJsonRestResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/rest/ModelEditorJsonRestResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ren/factoring/vanke/controller/ModelSaveRestResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/rest/ModelSaveRestResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ren/factoring/vanke/controller/ModelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/rest/ModelCreate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ren/factoring/vanke/controller/StencilsetRestResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/rest/StencilsetRestResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ren/factoring/vanke/handler/AutoCompleteCmd.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ren/factoring/vanke/listener/AutoCompleteFirstTaskEventListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ren/factoring/vanke/models/enmu/IReturnCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/models/enmu/IReturnCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ren/factoring/vanke/models/enmu/ResultCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/models/enmu/ResultCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ren/factoring/vanke/models/request/CompleteReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/models/request/CompleteReq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ren/factoring/vanke/models/request/CreateReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/models/request/CreateReq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ren/factoring/vanke/models/request/DeployReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/models/request/DeployReq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ren/factoring/vanke/models/request/StartReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/models/request/StartReq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ren/factoring/vanke/models/response/JsonResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/models/response/JsonResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ren/factoring/vanke/models/response/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/models/response/Response.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ren/factoring/vanke/utils/DefaultProcessDiagramCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/utils/DefaultProcessDiagramCanvas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ren/factoring/vanke/utils/DefaultProcessDiagramGeneratorExt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/utils/DefaultProcessDiagramGeneratorExt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ren/factoring/vanke/utils/IdUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/utils/IdUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ren/factoring/vanke/utils/Snowflake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/utils/Snowflake.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ren/factoring/vanke/utils/SnowflakeIdWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/utils/SnowflakeIdWorker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/activiti-boot.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/activiti-boot.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/activiti-boot.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/activiti-boot.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/ActivitiApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/config/ActivitiConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/config/SpringContextHolder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/config/Swagger2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/controller/ActivitiProcessController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/controller/ModelEditorJsonRestResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/controller/ModelSaveRestResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/controller/ModelTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/controller/StencilsetRestResource.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/handler/AutoCompleteCmd.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/listener/AutoCompleteFirstTaskEventListener$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/listener/AutoCompleteFirstTaskEventListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/models/enmu/IReturnCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/models/enmu/ResultCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/models/request/CompleteReq.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/models/request/CreateReq.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/models/request/DeployReq.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/models/request/StartReq.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/models/response/JsonResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/models/response/Response.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/utils/DefaultProcessDiagramCanvas$SHAPE_TYPE.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/utils/DefaultProcessDiagramCanvas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/utils/DefaultProcessDiagramGeneratorExt$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/utils/DefaultProcessDiagramGeneratorExt$10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/utils/DefaultProcessDiagramGeneratorExt$11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/utils/DefaultProcessDiagramGeneratorExt$12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/utils/DefaultProcessDiagramGeneratorExt$13.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/utils/DefaultProcessDiagramGeneratorExt$14.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/utils/DefaultProcessDiagramGeneratorExt$15.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/utils/DefaultProcessDiagramGeneratorExt$16.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/utils/DefaultProcessDiagramGeneratorExt$17.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/utils/DefaultProcessDiagramGeneratorExt$18.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/utils/DefaultProcessDiagramGeneratorExt$19.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/utils/DefaultProcessDiagramGeneratorExt$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/utils/DefaultProcessDiagramGeneratorExt$20.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/utils/DefaultProcessDiagramGeneratorExt$21.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/utils/DefaultProcessDiagramGeneratorExt$22.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/utils/DefaultProcessDiagramGeneratorExt$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/utils/DefaultProcessDiagramGeneratorExt$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/utils/DefaultProcessDiagramGeneratorExt$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/utils/DefaultProcessDiagramGeneratorExt$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/utils/DefaultProcessDiagramGeneratorExt$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/utils/DefaultProcessDiagramGeneratorExt$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/utils/DefaultProcessDiagramGeneratorExt$9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/utils/DefaultProcessDiagramGeneratorExt$ActivityDrawInstruction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/utils/DefaultProcessDiagramGeneratorExt$ArtifactDrawInstruction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/utils/DefaultProcessDiagramGeneratorExt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/utils/IdUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/utils/Snowflake.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/servingcloud/factoring/vanke/utils/SnowflakeIdWorker.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -18,19 +95,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
       <file leaf-file-name="ActivitiProcessController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/controller/ActivitiProcessController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/controller/ActivitiProcessController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1225">
-              <caret line="89" column="5" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AutoCompleteFirstTaskEventListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/listener/AutoCompleteFirstTaskEventListener.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+            <state relative-caret-position="55">
+              <caret line="59" column="5" lean-forward="true" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -38,8 +106,8 @@
       <file leaf-file-name="activiti-boot.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/activiti-boot.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="31" column="11" lean-forward="true" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+            <state relative-caret-position="175">
+              <caret line="19" column="58" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -92,11 +160,23 @@
         <option value="$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/utils/DefaultProcessDiagramCanvas.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/models/request/DeployReq.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/controller/ModelTest.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/models/response/JsonResponse.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/models/request/CompleteReq.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/controller/ActivitiProcessController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/config/SnowflakeIdGenerator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ren/factoring/vanke/controller/ActivitiProcessController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/config/Swagger2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/models/request/StartReq.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/utils/StringUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/models/request/CompleteBaseReq.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/rest/ModelCreate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/service/ActivitiProcessService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/service/impl/ActivitiProcessServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/config/AutoCompleteCmd.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/listener/AutoCommitListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/listener/ActivitiWholeListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/controller/ActivitiProcessController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/activiti-boot.xml" />
       </list>
     </option>
@@ -141,6 +221,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -181,7 +263,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="servingcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="ren" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="factoringactiviti" type="b2602c69:ProjectViewProjectNode" />
@@ -190,7 +272,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="servingcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="ren" type="462c0819:PsiDirectoryNode" />
               <item name="factoring" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -200,9 +282,9 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="servingcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="ren" type="462c0819:PsiDirectoryNode" />
               <item name="factoring" type="462c0819:PsiDirectoryNode" />
-              <item name="vanke" type="462c0819:PsiDirectoryNode" />
+              <item name="flow" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="factoringactiviti" type="b2602c69:ProjectViewProjectNode" />
@@ -211,9 +293,9 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="servingcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="ren" type="462c0819:PsiDirectoryNode" />
               <item name="factoring" type="462c0819:PsiDirectoryNode" />
-              <item name="vanke" type="462c0819:PsiDirectoryNode" />
+              <item name="flow" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -223,9 +305,95 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="servingcloud" type="462c0819:PsiDirectoryNode" />
+              <item name="ren" type="462c0819:PsiDirectoryNode" />
               <item name="factoring" type="462c0819:PsiDirectoryNode" />
-              <item name="vanke" type="462c0819:PsiDirectoryNode" />
+              <item name="flow" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="factoringactiviti" type="b2602c69:ProjectViewProjectNode" />
+              <item name="factoringactiviti" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ren" type="462c0819:PsiDirectoryNode" />
+              <item name="factoring" type="462c0819:PsiDirectoryNode" />
+              <item name="flow" type="462c0819:PsiDirectoryNode" />
+              <item name="listener" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="factoringactiviti" type="b2602c69:ProjectViewProjectNode" />
+              <item name="factoringactiviti" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ren" type="462c0819:PsiDirectoryNode" />
+              <item name="factoring" type="462c0819:PsiDirectoryNode" />
+              <item name="flow" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="factoringactiviti" type="b2602c69:ProjectViewProjectNode" />
+              <item name="factoringactiviti" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ren" type="462c0819:PsiDirectoryNode" />
+              <item name="factoring" type="462c0819:PsiDirectoryNode" />
+              <item name="flow" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="request" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="factoringactiviti" type="b2602c69:ProjectViewProjectNode" />
+              <item name="factoringactiviti" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ren" type="462c0819:PsiDirectoryNode" />
+              <item name="factoring" type="462c0819:PsiDirectoryNode" />
+              <item name="flow" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="factoringactiviti" type="b2602c69:ProjectViewProjectNode" />
+              <item name="factoringactiviti" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ren" type="462c0819:PsiDirectoryNode" />
+              <item name="factoring" type="462c0819:PsiDirectoryNode" />
+              <item name="flow" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="factoringactiviti" type="b2602c69:ProjectViewProjectNode" />
+              <item name="factoringactiviti" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ren" type="462c0819:PsiDirectoryNode" />
+              <item name="factoring" type="462c0819:PsiDirectoryNode" />
+              <item name="flow" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="factoringactiviti" type="b2602c69:ProjectViewProjectNode" />
+              <item name="factoringactiviti" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ren" type="462c0819:PsiDirectoryNode" />
+              <item name="factoring" type="462c0819:PsiDirectoryNode" />
+              <item name="flow" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -239,9 +407,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -262,19 +428,21 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\webstore\factoringactiviti\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ren.factoring.flow.config" />
+      <recent name="com.ren.factoring.flow.models.request" />
+      <recent name="com.ren.factoring.flow.utils" />
+      <recent name="com.ren.factoring.flow.service.impl" />
+      <recent name="com.ren.factoring.flow.service" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\activiti\factoringactiviti\src\main\java\com\ren\factoring\flow\listener" />
       <recent name="E:\webstore\factoringactiviti\src\main\java\com\servingcloud\factoring\vanke\models\response" />
       <recent name="E:\webstore\factoringactiviti\src\main\resources\static" />
       <recent name="E:\webstore\factoringactiviti\src\main\java\com\servingcloud\factoring\vanke" />
-      <recent name="E:\webstore\factoringactiviti\src\main\resources" />
-      <recent name="E:\webstore\factoringactiviti\src\main\resources\public\editor-app\i18n" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.servingcloud.factoring.vanke.config" />
-      <recent name="com.servingcloud.factoring.vanke.controller" />
-      <recent name="demo" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\webstore\factoringactiviti\src\main\resources" />
     </key>
   </component>
@@ -296,7 +464,7 @@
     </option>
     <option name="contentProportion" value="0.16694215" />
   </component>
-  <component name="RunManager" selected="Spring Boot.ActivitiApplication (1)">
+  <component name="RunManager" selected="Spring Boot.ActivitiApplication">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -343,11 +511,11 @@
       <module name="factoring-activiti" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ren.factoring.vanke.*" />
+          <option name="PATTERN" value="com.ren.factoring.flow.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ren.factoring.vanke.ActivitiApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ren.factoring.flow.ActivitiApplication" />
     </configuration>
     <configuration name="ActivitiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="factoring-activiti" />
@@ -384,11 +552,9 @@
     <list>
       <item itemvalue="JUnit.FileTest.test1" />
       <item itemvalue="Spring Boot.ActivitiApplication" />
-      <item itemvalue="Spring Boot.ActivitiApplication (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ActivitiApplication (1)" />
         <item itemvalue="Spring Boot.ActivitiApplication" />
         <item itemvalue="JUnit.FileTest.test1" />
       </list>
@@ -412,6 +578,7 @@
       <workItem from="1556077177462" duration="2378000" />
       <workItem from="1556240544647" duration="2630000" />
       <workItem from="1560161844292" duration="153000" />
+      <workItem from="1569822355784" duration="6268000" />
     </task>
     <servers />
   </component>
@@ -433,7 +600,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56695000" />
+    <option name="totallyTimeSpent" value="62963000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -451,29 +618,29 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39259258" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32777777" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Run Dashboard" order="8" weight="0.4611111" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" order="8" visible="true" weight="0.17592593" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22312045" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2497979" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
-      <window_info anchor="right" id="BPMNPalette" order="3" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info active="true" id="BPMN Editor" order="0" visible="true" weight="0.329582" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32777777" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="BPMNPalette" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
       <window_info id="Designer" order="3" />
@@ -520,114 +687,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="16" />
+      <option name="time" value="18" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/activiti/activiti-engine/6.0.0/activiti-engine-6.0.0.jar!/org/activiti/engine/RepositoryService.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/activiti/activiti-engine/6.0.0/activiti-engine-6.0.0.jar!/org/activiti/engine/impl/persistence/entity/ProcessDefinitionEntity.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/listener/AutoCompleteFirstTaskEventListener.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/demo/FileTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/editor-app/app-cfg.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/editor-app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="52" column="28" lean-forward="true" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/controller/StencilsetRestResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="37" column="12" lean-forward="true" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/controller/ModelSaveRestResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1175">
-          <caret line="82" selection-start-line="82" selection-end-line="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/stencilset.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5993">
-          <caret line="47" column="22" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/editor-app/i18n/zh_CN.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-150" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/handler/AutoCompleteCmd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.12.RELEASE/spring-web-4.3.12.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="127" column="45" lean-forward="true" selection-start-line="127" selection-start-column="45" selection-end-line="127" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/models/request/CreateReq.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/activiti/DeployedServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/config/ActivitiConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/activiti/activiti-image-generator/5.22.0/activiti-image-generator-5.22.0.jar!/org/activiti/image/impl/DefaultProcessDiagramGenerator.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -635,41 +698,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/utils/DefaultProcessDiagramGeneratorExt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11575">
-          <caret line="463" column="142" selection-start-line="463" selection-start-column="142" selection-end-line="463" selection-end-column="142" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/utils/DefaultProcessDiagramCanvas.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25725">
-          <caret line="1058" column="53" selection-start-line="1058" selection-start-column="53" selection-end-line="1058" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/models/request/DeployReq.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/controller/ModelEditorJsonRestResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-277">
-          <caret line="41" column="12" lean-forward="true" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/config/Swagger2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="11" column="67" lean-forward="true" selection-start-line="11" selection-start-column="67" selection-end-line="11" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/utils/DefaultProcessDiagramGeneratorExt.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/utils/DefaultProcessDiagramCanvas.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/models/request/DeployReq.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/controller/ModelEditorJsonRestResource.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/config/Swagger2.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/process.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="248">
@@ -677,13 +710,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/config/SpringContextHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-527">
-          <caret line="26" column="34" lean-forward="true" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/config/SpringContextHolder.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/diagram-viewer/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1050" />
@@ -694,27 +721,8 @@
         <state relative-caret-position="-5952" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/controller/ModelTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="20" column="55" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/ActivitiApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/controller/ModelTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/ActivitiApplication.java" />
     <entry file="jar://D:/MavenRepository/repository/org/activiti/activiti-engine/5.22.0/activiti-engine-5.22.0.jar!/org/activiti/engine/RuntimeService.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
@@ -806,27 +814,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/models/response/Response.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/models/response/JsonResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/models/request/CompleteReq.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/models/response/Response.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/models/response/JsonResponse.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/models/request/CompleteReq.java" />
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
@@ -834,38 +824,129 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/models/request/StartReq.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/controller/ActivitiProcessController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1225">
-          <caret line="89" column="5" selection-start-line="89" selection-start-column="5" selection-end-line="89" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/listener/AutoCompleteFirstTaskEventListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/config/SnowflakeIdGenerator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/models/request/StartReq.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/controller/ActivitiProcessController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/listener/AutoCompleteFirstTaskEventListener.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/servingcloud/factoring/vanke/config/SnowflakeIdGenerator.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/models/request/CompleteReq.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="8" selection-start-column="8" selection-end-column="47" />
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/config/Swagger2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="575">
+          <caret line="32" column="35" lean-forward="true" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/utils/StringUtil.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/rest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/service/impl/ActivitiProcessServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/service/ActivitiProcessService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/handler/AutoCompleteCmd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-200">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/listener/AutoCompleteFirstTaskEventListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-100">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/listener/ActivitiWholeListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="88" column="21" selection-start-line="88" selection-start-column="21" selection-end-line="88" selection-end-column="21" />
+          <folding>
+            <element signature="e#3204#3205#0" expanded="true" />
+            <element signature="e#3279#3280#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/config/AutoCompleteCmd.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/listener/UserTaskListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/listener/AutoCommitListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/rest/ModelCreate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/models/request/StartReq.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/models/request/CompleteBaseReq.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="31" column="34" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ren/factoring/flow/controller/ActivitiProcessController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="59" column="5" lean-forward="true" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/activiti-boot.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="31" column="11" lean-forward="true" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
+        <state relative-caret-position="175">
+          <caret line="19" column="58" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
         </state>
       </provider>
     </entry>

@@ -15,23 +15,23 @@
         <!-- 配置事务管理器，统一事务 -->
         <property name="transactionManager" ref="transactionManager" />
         <!-- 设置建表策略，如果没有表，自动创建表 -->
-        <property name="databaseSchemaUpdate" value="true" />
+        <property name="databaseSchemaUpdate" value="false" />
         <!-- 是否启动jobExecutor -->
         <property name="jobExecutorActivate" value="false" />
 
         <!--全局监听器 -->
-        <property name="eventListeners">
-            <list>
-                <bean class="com.ren.factoring.vanke.listener.AutoCompleteFirstTaskEventListener" />
-            </list>
-        </property>
+        <!--<property name="eventListeners">-->
+            <!--<list>-->
+                <!--<bean class="com.ren.factoring.flow.listener.AutoCompleteFirstTaskEventListener" />-->
+            <!--</list>-->
+        <!--</property>-->
 
         <property name="idGenerator" ref="uuidGenerator">
         </property>
 
     </bean>
 
-    <bean id="uuidGenerator" class="com.ren.factoring.vanke.config.SnowflakeIdGenerator"></bean>
+    <bean id="uuidGenerator" class="com.ren.factoring.flow.config.SnowflakeIdGenerator"></bean>
 
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"   destroy-method="close">
         <property name="driverClassName" value="${spring.datasource.driver-class-name}" />
