@@ -1,0 +1,40 @@
+# IDE
+**/.idea
+**/.project
+**/.git
+**/*.iml
+**/*.ipr
+**/*.iws
+
+# eclipse conf file 
+.settings
+.classpath
+.project
+.manager
+
+# Python
+**/__pycache__
+**/*.pyc
+**/.ropeproject/
+
+# Maven
+bin
+target
+target/*
+target/
+/target
+
+# Gradle
+**/build/
+**/.gradle/
+!/deploy/bin/
+./**/bin/
+classes
+
+# logger
+**/logs 
+
+# other
+**/zookeeper.out
+**/dump.rdb
+.scannerwork/ 
