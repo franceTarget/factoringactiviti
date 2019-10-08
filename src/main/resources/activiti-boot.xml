@@ -9,8 +9,19 @@
     <!--流程activiti相关配置-->
     <!-- spring负责创建流程引擎的配置文件 -->
     <bean id="processEngineConfiguration" class="org.activiti.spring.SpringProcessEngineConfiguration">
-        <property name="history" value="full"/>
+
+        <!-- 用户表不检查 -->
+        <property name="dbIdentityUsed" value="false" />
+        <!-- 历史日志级别 -->
+        <!--<property name="history" value="none" />-->
+        <property name="history" value="activity"/>
+        <!--<property name="history" value="audit" />-->
+        <!--<property name="history" value="full" />-->
+
+        <!-- 不检测历史表是否存在,应对Activiti database problem: Tables missing for component(s) history, identity -->
+        <property name="dbHistoryUsed" value="false" />
         <!-- 数据源 -->
+        <property name="databaseType" value="mysql" />
         <property name="dataSource" ref="dataSource" />
         <!-- 配置事务管理器，统一事务 -->
         <property name="transactionManager" ref="transactionManager" />
@@ -18,7 +29,11 @@
         <property name="databaseSchemaUpdate" value="false" />
         <!-- 是否启动jobExecutor -->
         <property name="jobExecutorActivate" value="false" />
-
+        <!-- 避免发布的图片和xml遇到中文时乱码 -->
+        <property name="activityFontName" value="宋体"/>
+        <property name="labelFontName" value="宋体"/>
+        <!-- 解析xml流程文件所使用的字符集，默认为utf8，依据数据库来 -->
+        <!--<property name="xmlEncoding" value="utf8"/>-->
         <!--全局监听器 -->
         <!--<property name="eventListeners">-->
             <!--<list>-->
@@ -38,6 +53,10 @@
         <property name="url"  value="${spring.datasource.url}" />
         <property name="username" value="${spring.datasource.username}" />
         <property name="password" value="${spring.datasource.password}" />
+    </bean>
+
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource" />
     </bean>
 
 </beans>
