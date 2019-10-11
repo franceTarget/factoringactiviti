@@ -55,7 +55,6 @@ public class ActivitiByteServiceImpl implements ActivitiByteService {
             String preNode = activityImpl.getId();
             //获取节点所有流向线路信息
             List<PvmTransition> outTransitions = activityImpl.getOutgoingTransitions();
-            List<PvmTransition> outTransitionsTemp = null;
             for (PvmTransition tr : outTransitions) {
                 PvmActivity ac = tr.getDestination();
                 NodeResp nodeResp = new NodeResp();
