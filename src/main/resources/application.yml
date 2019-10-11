@@ -21,3 +21,6 @@ server:
 #   process-definition-location-suffixes:
 #      - **.bpmn
 #      - **.bpmn20.xml
+mybatis:
+  mapper-locations: classpath:/mapper/*.xml
+  type-aliases-package: com.ren.factoring.flow.dao

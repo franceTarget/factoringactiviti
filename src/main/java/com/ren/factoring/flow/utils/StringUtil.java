@@ -77,4 +77,8 @@ public class StringUtil {
         return result;
     }
 
+    public static String trim(String s) {
+        return isEmpty(s) ? "" : s.trim();
+    }
+
 }

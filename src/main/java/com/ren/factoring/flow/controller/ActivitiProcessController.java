@@ -1,6 +1,7 @@
 package com.ren.factoring.flow.controller;
 
 import com.google.common.collect.Maps;
+import com.ren.factoring.flow.models.model.ActRuTask;
 import com.ren.factoring.flow.models.request.CompleteBaseReq;
 import com.ren.factoring.flow.models.request.DeployReq;
 import com.ren.factoring.flow.models.request.StartReq;
@@ -9,16 +10,19 @@ import com.ren.factoring.flow.service.ActivitiProcessService;
 import com.ren.factoring.flow.utils.StringUtil;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;
 import org.activiti.engine.*;
 import org.activiti.engine.repository.Deployment;
 import org.activiti.engine.runtime.ProcessInstance;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Map;
 
+import static org.springframework.web.bind.annotation.RequestMethod.GET;
 import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
 @Api(tags = "流程接口")
@@ -86,5 +90,18 @@ public class ActivitiProcessController {
         }
         taskService.complete(req.getTaskId(), resultMap);
         return Response.ok("提交成功", true);
+    }
+
+    @ApiOperation(value = "查询当前任务", notes = "")
+    @RequestMapping(value = "/self/current/task/query", method = GET)
+    public Response<ActRuTask> getCurrentTask(@ApiParam("流程实例Id") @RequestParam("procInstId") String procInstId) {
+        return Response.ok("", activitiProcessService.getCurrentTask(procInstId));
+    }
+
+    @ApiOperation(value = "查询下个任务信息", notes = "")
+    @RequestMapping(value = "/self/next/task/query", method = GET)
+    public Response<ActRuTask> getNextTask(@ApiParam("任务Id") @RequestParam("taskId") String taskId,
+                                           @ApiParam("el条件") @RequestParam(name = "elString", required = false, defaultValue = "") String elString) {
+        return Response.ok("", activitiProcessService.getNextTask(taskId, elString));
     }
 }
